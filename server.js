@@ -74,8 +74,8 @@ app.slapp.message('stats', ['mention', 'direct_mention', 'direct_message'], (msg
 
 app.slapp.message('help', ['mention', 'direct_mention', 'direct_message'], (msg) => {
   msg.say('I will respond to the following messages: \n' +
-      '`strava stats` for a simple message.\n' +
-      '`bot help` to see this again.')
+      '`stats` for a simple message.\n' +
+      '`help` to see this again.')
 })
 
 
