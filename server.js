@@ -19,13 +19,6 @@ var app = {
   slapp,
 }
 
-// Expect a SLACK_TOKEN environment variable
-var slackToken = process.env.SLACK_TOKEN
-if (!slackToken) {
-  console.error('SLACK_TOKEN is required!')
-  process.exit(1)
-}
-
 var stravaToken = process.env.STRAVA_ACCESS_TOKEN
 if (!stravaToken) {
   console.error('STRAVA_ACCESS_TOKEN is required!')
@@ -73,7 +66,7 @@ app.slapp.message('stats', ['mention', 'direct_mention', 'direct_message'], (msg
       })
 
       lazyStr += motivations[Math.floor(Math.random() * (motivations.length + 1))]
-      bot.reply(evt, lazyStr)
+      msg.say(lazyStr)
     })
   })
 })
