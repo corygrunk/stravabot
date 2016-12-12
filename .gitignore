@@ -1,0 +1,10 @@
+.jshintrc
+ngrok
+node_modules
+lost+found
+Thumbs.db
+.DS_Store
+._.DS_Store
+.SyncID
+.SyncIgnore
+.SyncArchive
