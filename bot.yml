@@ -1,3 +1,10 @@
 name: Stravabot
 description: Shame your club's strava slackers.
 avatar: art/avatar.png
+config:
+- name: STRAVA_ACCESS_TOKEN
+  friendly_name: Strava Access Token
+  type: text
+- name: CLUB_ID
+  friendly_name: Strava Club ID
+  type: text
