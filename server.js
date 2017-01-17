@@ -79,11 +79,6 @@ app.slapp.message('help', ['mention', 'direct_mention', 'direct_message'], (msg)
 })
 
 
-// presence polyfill
-require('beepboop-slapp-presence-polyfill')(slapp, {
-  debug: true
-})
-
 // attach Slapp to express server
 var server = slapp.attachToExpress(express())
 
