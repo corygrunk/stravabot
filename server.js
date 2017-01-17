@@ -35,7 +35,7 @@ var app = {
   slapp,
 }
 
-var shame = require('./src/shame')(app)
+var help = require('./src/help')(app)
 var stats = require('./src/stats')(app)
 
 server.use(express.static('public'))
