@@ -18,6 +18,7 @@
   "homepage": "https://github.com/corygrunk/stravabot#readme",
   "dependencies": {
     "express": "^4.14.0",
+    "slack-message-builder": "^1.0.0",
     "slapp": "^1.2.0",
     "slapp-context-beepboop": "^1.0.1",
     "slapp-convo-beepboop": "^1.0.0",
