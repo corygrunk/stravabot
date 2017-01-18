@@ -101,7 +101,7 @@ module.exports = (app) => {
             .authorName(shamingList.slice(0, -2))
             .authorIcon('https://dl.dropboxusercontent.com/u/156187/donut.png')
             .text('_' + motivations[Math.floor(Math.random() * (motivations.length + 1))] + '_')
-            .footer('Stats reset Sunday morning. Get your butt our there.')
+            .footer('Stats reset Sunday morning. Get your butt out there.')
         msg.say({ text: m.data.text, attachments: m.data.attachments})
       })
     })
