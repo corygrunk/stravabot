@@ -72,7 +72,7 @@ module.exports = (app) => {
         calcTotal()
 
         let m = smb()
-        m.text('Your Strava team\'s stats')
+        m.text('Your Strava team\'s activity for the past 4 days:')
           .attachment()
             .fallback('Required plain-text summary of the attachment.')
             .mrkdwnIn(['text'])
@@ -101,7 +101,6 @@ module.exports = (app) => {
             .authorName(shamingList.slice(0, -2))
             .authorIcon('https://dl.dropboxusercontent.com/u/156187/donut.png')
             .text('_' + motivations[Math.floor(Math.random() * (motivations.length))] + '_')
-            .footer('Stats are for activites in the past 4 days.')
         msg.say({ text: m.data.text, attachments: m.data.attachments})
       })
     })
