@@ -101,7 +101,7 @@ module.exports = (app) => {
             .authorName(shamingList.slice(0, -2))
             .authorIcon('https://dl.dropboxusercontent.com/u/156187/donut.png')
             .text('_' + motivations[Math.floor(Math.random() * (motivations.length))] + '_')
-            .footer('I have no idea when the stats reset. Working on that...')
+            .footer('Stats are for activites in the past 4 days.')
         msg.say({ text: m.data.text, attachments: m.data.attachments})
       })
     })
